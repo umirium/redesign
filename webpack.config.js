@@ -20,6 +20,7 @@ module.exports = {
   optimization: {
     splitChunks: {
       chunks: 'initial',
+      maxSize: 200 * 1024,
     }
   },
   // ローダの設定
@@ -40,7 +41,6 @@ module.exports = {
         ],
         exclude: /node_modules/,
       },
-
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
@@ -48,6 +48,27 @@ module.exports = {
           'css-loader',
           'sass-loader',
         ]
+      },
+      {
+        test: /\.(ttf|eot|woff|woff2|svg)$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: "[name].[ext]",
+            outputPath: './webfonts',
+            publicPath: '../webfonts',
+          }
+        }]
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/,
+        use: [{
+          loader: 'url-loader',
+          options: {
+            limit: 100 * 1024,
+            name: '[name].[ext]',
+          }
+        }]
       },
     ]
   },
@@ -57,7 +78,8 @@ module.exports = {
       jQuery: 'jquery'
     }),
     new MiniCssExtractPlugin({
-      filename: 'style.css',
+      filename: 'main.css',
+      chunkFilename: 'chunk-[id].css',
     })
   ],
   performance: {
