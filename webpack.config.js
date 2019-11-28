@@ -1,13 +1,9 @@
 // 以下、参照
 
-// 【webpack 4】環境構築からJSとCSSを別出力まで（備忘録） – expexp.jp
-// https://www.expexp.jp/webpack/
-
 // webpackでMaterializeを使うにあたりハマったこと - Qiita
 // https://qiita.com/usk83/items/a06d7a6080c7f2b7ef0a
 
-const webpack = require('webpack');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   // モードの設定
@@ -19,13 +15,11 @@ module.exports = {
   },
   optimization: {
     splitChunks: {
+      name: 'vendor',
       chunks: 'initial',
-      maxSize: 200 * 1024,
     }
   },
-  // ローダの設定
   module: {
-    // babel-loaderの設定
     rules: [
       {
         test: /\.js$/,
@@ -73,14 +67,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
-    }),
     new MiniCssExtractPlugin({
       filename: 'main.css',
       chunkFilename: 'chunk-[id].css',
-    })
+    }),
   ],
   performance: {
     hints: 'warning'

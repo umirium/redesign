@@ -1,4 +1,3 @@
-@import 'materialize/icons';
 @import 'materialize/materialize';
 @import 'materialize/setting';
 
@@ -7,19 +6,19 @@
 $black: #333;
 $gray: #888;
 
-/* mixin */
-@mixin logofont {
-  font: {
-    family: "lucida grande", "lucida sans", sans-serif;
-    size:   300%;
-    weight: bold;
-  }
+// WebフォントのFOUT防止
+html {
+  visibility: hidden;
+}
+html.wf-active, html.wf-delay {
+  visibility: visible;
 }
 
-/* ネスト */
 body {
   margin: 0 auto;
   width: 800px;
+
+  font-family: 'Noto Sans', 'Noto Sans CJK JP', 'Noto Sans JP', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
 
   header {
     h1 {
