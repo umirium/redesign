@@ -4,5 +4,7 @@ import './scss/style.scss'
 require('materialize-css')
 
 // Webフォント読み込み
-import { loadFonts } from "./javascript/fonts.js"
+import {
+  loadFonts
+} from "./javascript/fonts.js"
 loadFonts();

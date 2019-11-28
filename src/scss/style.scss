@@ -1,41 +1,17 @@
 @import 'materialize/materialize';
 @import 'materialize/setting';
-
-/***** 基本 *****/
-/* 変数 */
-$black: #333;
-$gray: #888;
-
 // WebフォントのFOUT防止
 html {
   visibility: hidden;
 }
-html.wf-active, html.wf-delay {
+
+html.wf-active,
+html.wf-delay {
   visibility: visible;
 }
 
 body {
   margin: 0 auto;
   width: 800px;
-
   font-family: 'Noto Sans', 'Noto Sans CJK JP', 'Noto Sans JP', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
-
-  header {
-    h1 {
-      /* 変数を使う*/
-      border-bottom: 1px dotted $black;
-    }
-  }
-
-  div {
-    margin: 0 0 20px;
-  }
-
-  footer {
-    border-top: 1px solid $gray;
-
-    address {
-      font-size: 90%;
-    }
-  }
 }
