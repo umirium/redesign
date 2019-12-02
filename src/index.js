@@ -8,3 +8,8 @@ import {
   loadFonts
 } from "./javascript/fonts.js"
 loadFonts();
+
+$(() => {
+    $('.fixed-action-btn').floatingActionButton()
+    $('.sidenav').sidenav()
+})

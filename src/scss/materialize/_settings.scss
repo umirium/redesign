@@ -1,0 +1,12 @@
+// Material design iconsの設定
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+// メインカラーの設定
+$primary-color: color("brown", "darken-1") !default;
+$secondary-color: color("yellow", "base") !default;
+$primary-text-color:  color("lime", "darken-1") !default;
