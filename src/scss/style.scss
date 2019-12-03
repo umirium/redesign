@@ -13,4 +13,16 @@ body {
   margin: 0 auto;
   // width: 800px;
   font-family: 'Noto Sans', 'Noto Sans CJK JP', 'Noto Sans JP', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
+
+  // navbarを固定し、下スクロールで隠す
+  #navbar{
+      position: fixed;
+      top: 0;
+      transition: .5s;
+      width: 100%;
+      z-index: 999;
+  }
+  #navbar.hide-animation{
+      transform: translateY(-100%);
+  }
 }

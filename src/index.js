@@ -13,3 +13,19 @@ $(() => {
     $('.fixed-action-btn').floatingActionButton()
     $('.sidenav').sidenav()
 })
+
+// ヘッダを下スクロールで隠す処理
+let startPos = 0
+let winScrollTop = 0
+$(window).on('scroll', e => {
+  winScrollTop = $(e.currentTarget).scrollTop()
+
+  if (winScrollTop >= startPos) {
+    if (winScrollTop >= 150) {
+      $('#navbar').addClass('hide-animation')
+    }
+  } else {
+    $('#navbar').removeClass('hide-animation')
+  }
+  startPos = winScrollTop
+})
