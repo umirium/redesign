@@ -16,11 +16,17 @@
       <a href="#" data-target="mobile-demo" class="sidenav-trigger">
         <i class="material-icons">menu</i>
       </a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">商品一覧</a></li>
-        <li><a href="badges.html">○○とは？</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+      <ul class="right">
+        <li class="hide-on-med-and-down"><a href="sass.html">商品一覧</a></li>
+        <li class="hide-on-med-and-down"><a href="badges.html">○○とは？</a></li>
+        <li id="nav-cart">
+          <a href="sass.html">
+            <i class="material-icons left">shopping_cart</i>
+            <span class="new badge red" data-badge-caption="">3</span>
+            カート
+          </a>
+        </li>
+        <li style="background-color:crimson;"><a href="mobile.html">ログイン</a></li>
       </ul>
     </div>
   </nav>
@@ -138,7 +144,6 @@
       <li><a class="btn-floating blue darken-2"><i class="facebook-icon"> </i></a></li>
       <li><a class="btn-floating green"><i class="line-icon"> </i></a></li>
     </ul>
-
   </div>
   <!-- /Floating Action Button -->
 </body>

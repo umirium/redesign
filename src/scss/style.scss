@@ -18,15 +18,29 @@ body {
   letter-spacing: .05em;
   color: #546E7A;
 
-  // navbarを固定し、下スクロールで隠す
-  #navbar{
-      position: fixed;
-      top: 0;
-      transition: .5s;
-      width: 100%;
-      z-index: 999;
+  #navbar {
+    // navbarを固定し、下スクロールで隠す
+    position: fixed;
+    top: 0;
+    transition: .5s;
+    width: 100%;
+    z-index: 999;
+
+    // navbarのカート表示設定
+    #nav-cart {
+      display: block;
+      position: relative;
+
+      a span.badge {
+        position: absolute;
+        top: 3px;
+        left:33px;
+        min-width:0;
+      }
+    }
   }
-  #navbar.hide-animation{
-      transform: translateY(-100%);
+  #navbar.hide-animation {
+    // 下スクロールで隠す際のアニメーション
+    transform: translateY(-100%);
   }
 }
