@@ -1,4 +1,6 @@
 @import 'materialize/materialize';
+@import 'sns-icons';
+
 // WebフォントのFOUT防止
 html {
   visibility: hidden;
@@ -11,8 +13,10 @@ html.wf-delay {
 
 body {
   margin: 0 auto;
-  // width: 800px;
   font-family: 'Noto Sans', 'Noto Sans CJK JP', 'Noto Sans JP', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
+
+  letter-spacing: .05em;
+  color: #546E7A;
 
   // navbarを固定し、下スクロールで隠す
   #navbar{

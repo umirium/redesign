@@ -10,6 +10,7 @@ import {
 loadFonts();
 
 $(() => {
+    // Materialize componentsの初期化
     $('.fixed-action-btn').floatingActionButton()
     $('.sidenav').sidenav()
 })
