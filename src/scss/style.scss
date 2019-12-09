@@ -1,16 +1,21 @@
 @import 'materialize/materialize';
 @import 'sns-icons';
 
+// コンテンツの最大横幅
+$max-width-contents: 1100px;
+// 自治体カラー
+$store-color: #bb35a4;
+
 // WebフォントのFOUT防止
 html {
   visibility: hidden;
 }
-
 html.wf-active,
 html.wf-delay {
   visibility: visible;
 }
 
+// 本文
 body {
   margin: 0 auto;
   font-family: 'Noto Sans', 'Noto Sans CJK JP', 'Noto Sans JP', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
@@ -34,8 +39,15 @@ body {
       a span.badge {
         position: absolute;
         top: 3px;
-        left:33px;
+        left: 33px;
         min-width:0;
+      }
+    }
+
+    // ストアロゴ
+    .brand-logo {
+      img {
+         height:60px;
       }
     }
   }
@@ -43,4 +55,209 @@ body {
     // 下スクロールで隠す際のアニメーション
     transform: translateY(-100%);
   }
+
+  .slider.top-slider {
+    .caption {
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+
+      .paragraph {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        padding: 2em;
+        justify-content: end;
+        align-items: end;
+      }
+    }
+  }
+
+  .top-contents {
+    max-width: $max-width-contents;
+    margin: 0 auto;
+    padding: 0 1.5em;
+
+    .store-info {
+      padding-top: 3em;
+
+      .name {
+        text-align: center;
+        color: $store-color;
+      }
+
+      .catchphrase {
+        text-align: center;
+        color: $store-color;
+      }
+
+      .description {
+        font-size: 1.3em;
+        padding-top: 1.5em;
+        text-align: justify;
+      }
+
+      .about-button {
+        text-align: center;
+        padding-top: 4em;
+      }
+    }
+
+    .product-info {
+      padding-top: 4em;
+
+      // NOTE: PHPから出力のため、あえてHTML直打ちにする
+      // .card-image {
+      // }
+
+      .card-content {
+        padding: 0;
+
+        .title {
+          font-weight: bold;
+          font-size: 1.2em;
+          padding: 0.8em 0.8em 0;
+        }
+
+        .description {
+          padding:  0.3em 1.3em 0 1.5em;
+          text-align: justify;
+        }
+
+        .button-area {
+          text-align:right;
+          padding: 1em 1.5em 0.8em;
+
+          .detail-button {
+            color:green;
+          }
+        }
+      }
+
+      .list-button {
+        padding-top: 2em;
+        text-align: center;
+      }
+    }
+
+    .what-furusato-tax {
+      padding-top: 4em;
+
+      .description {
+        padding: 0.5em 0.5em;
+        text-align: justify;
+      }
+
+      .what {
+        .card-image {
+          height: 100px;
+          background: #ddd url('https://static.tenki.jp/images/inapp/mountain-app/photo/photo_172_01.jpg') no-repeat center center;
+          background-size: cover;
+        }
+
+        .card-content {
+          font-weight: bold;
+          font-size: 1.2em;
+          text-align: center;
+          padding: 0.7em;
+        }
+      }
+
+      .onestop {
+        .card-image {
+          height: 100px;
+          background: #ddd url('https://hajimete-kaigyo.com/wp-content/uploads/2018/08/%E9%9D%92%E8%89%B2%E7%94%B3%E5%91%8A%E3%80%80%E8%A8%98%E5%B8%B3-994x538.png') no-repeat center center;
+          background-size: cover;
+        }
+
+        .card-content {
+          font-weight: bold;
+          font-size: 1.2em;
+          text-align: center;
+          padding: 0.7em;
+        }
+      }
+
+      .tax-use {
+        .card-image {
+          height: 100px;
+          background: #ddd url('https://publicdomainq.net/images/201704/25s/publicdomainq-0008410bvj.jpg') no-repeat center center;
+          background-size: cover;
+        }
+
+        .card-content {
+          font-weight: bold;
+          font-size: 1.2em;
+          text-align: center;
+          padding: 0.7em;
+        }
+      }
+    }
+  }
+
+  // フッタ
+  .page-footer {
+    color: white;
+    background-color: orange;
+
+    .contents {
+      padding-top: 1em;
+      padding-bottom: 2.5em;
+
+      .row {
+        max-width: $max-width-contents;
+        width: 80%;
+        padding-top: 0.5em;
+        margin: 0 auto;
+
+        .category {
+          color: white;
+          font-size: 1.5em;
+        }
+
+        ul {
+          margin-top: 0.4em;
+
+          li {
+            padding-left: 0.8em;
+            line-height: 1.8em;
+
+            .link {
+              color: white;
+            }
+          }
+        }
+
+        .store-name {
+          font-size: 2em;
+        }
+
+        .store-address {
+          padding-top: 0.4em;
+          padding-left: 0.8em;
+          line-height: 1.6em;
+        }
+      }
+
+      // フッタのストア情報row
+      .store-info {
+        padding-top: 2em;
+      }
+    }
+
+    .footer-copyright {
+      .container {
+        text-align: center;
+      }
+    }
+  }
+}
+
+// 見出し
+.theme-caption {
+  border-bottom: 1px solid #715c1f;
+  border-left: 10px solid #715c1f;
+  padding: 7px 12px;
+  color:#715c1f;
 }

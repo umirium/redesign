@@ -9,10 +9,12 @@
 </head>
 
 <body>
-  <!-- Navbar -->
+  <!-- ヘッダ（Navbar） -->
   <nav id="navbar">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
+      <a href="#" class="brand-logo">
+        <img src="http://www.city.sagamihara.kanagawa.jp/_template_/_site_/_default_/_res/design/images/header/tlogo.png" alt="ロゴ">
+      </a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger">
         <i class="material-icons">menu</i>
       </a>
@@ -37,101 +39,294 @@
     <li><a href="collapsible.html">Javascript</a></li>
     <li><a href="mobile.html">Mobile</a></li>
   </ul>
-  <!-- /Navbar -->
+  <!-- /ヘッダ（Navbar） -->
 
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">Starter Template</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+  <!-- スライド画像 -->
+  <div class="slider top-slider" style="margin-top:100px">
+    <ul class="slides">
+      <li>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/The_Sagami_river_Tx-re.jpg">
+        <div class="caption right-align top-slider-caption">
+          <div class="paragraph">
+            <div>
+              <h3>相模川</h3>
+              <h5 class="light grey-text text-lighten-3">相模川水系の一級河川</h5>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/South_Entrance_of_JR_Sagamihara_Station_in_2008.jpg/1920px-South_Entrance_of_JR_Sagamihara_Station_in_2008.jpg">
+        <div class="caption right-align top-slider-caption">
+          <div class="paragraph">
+            <div>
+              <h3>相模原市内</h3>
+              <h5 class="light grey-text text-lighten-3">2010年より政令指定都市</h5>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="https://www.miyako-reform.co.jp/wp-content/uploads/2019/06/%E7%9B%B8%E6%A8%A1%E5%8E%9F%E5%B8%82%E7%B7%91%E5%8C%BA.jpg">
+        <div class="caption right-align top-slider-caption">
+          <div class="paragraph">
+            <div>
+              <h3>相模原市緑区</h3>
+              <h5 class="light grey-text text-lighten-3">自然豊かな緑区</h5>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Shiroyama_Dam_04.jpg/2560px-Shiroyama_Dam_04.jpg">
+        <div class="caption right-align top-slider-caption">
+          <div class="paragraph">
+            <div>
+              <h3>城山ダム</h3>
+              <h5 class="light grey-text text-lighten-3">先日の台風では大活躍</h5>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- /スライド画像 -->
+
+  <!-- メインコンテンツ -->
+  <div class="top-contents">
+    <!-- ストアの紹介 -->
+    <article class="store-info">
+      <h1 class="name">相模原市</h1>
+      <h3 class="catchphrase">－未来へつながるまち－</h3>
+      <div class="description">
+        相模原市は戦後生まれの市でありながら、目覚ましい発展を遂げた他に例を見ない都市であります。平成15年に中核市へ移行し、平成18年、19年の4町との合併により清流を育む広大な森林などの恵まれた自然環境を有する都市となりました。
       </div>
-      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+      <div class="about-button">
+        <a class="btn btn-large waves-effect waves-light">相模原市について</a>
       </div>
-      <br><br>
-      <h1>Webに関わるすべての人のためのメディア</h1>
-    </div>
+    </article>
+    <!-- /ストアの紹介 -->
+
+    <!-- 商品紹介 -->
+    <article class="product-info">
+      <h5 class="theme-caption">返礼品のご紹介</h5>
+
+      <div class="section row">
+        <div class="col s6 m4 l3">
+          <div class="card">
+            <div class="card-image" style="height:150px;background:#ddd url('https://shop.r10s.jp/keyuca/cabinet/18/s1101057.jpg') no-repeat center center;background-size:cover;">
+            </div>
+            <div class="card-content">
+              <div class="title">きれいな茶碗</div>
+              <div class="description">
+                茶碗は茶器の一つとして中国で生まれ、奈良時代から平安時代をかけて茶...
+              </div>
+              <div class="button-area">
+                <a class="btn-flat waves-effect waves-teal detail-button">詳細</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 m4 l3">
+          <div class="card">
+            <div class="card-image" style="height:150px;background:#ddd url('https://jp.images-monotaro.com/Monotaro3/pi/full/mono09388653-080125-02.jpg') no-repeat center center;background-size:cover;">
+            </div>
+            <div class="card-content">
+              <div class="title">やかん</div>
+              <div class="description">
+                もともとは中国の注ぎ口と取っ手のある、生薬用の加熱器具「銚子（拼音: ...
+              </div>
+              <div class="button-area">
+                <a class="btn-flat waves-effect waves-teal detail-button">詳細</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 m4 l3">
+          <div class="card">
+            <div class="card-image" style="height:150px;background:#ddd url('https://www.sirogohan.com/_files/recipe/images/gohan/gohan11543.JPG') no-repeat center center;background-size:cover;">
+            </div>
+            <div class="card-content">
+              <div class="title">ご飯</div>
+              <div class="description">
+                イネ科の穀物全般を対象に、特に米に、水を加えて煮たり蒸たりして炊い...
+              </div>
+              <div class="button-area">
+                <a class="btn-flat waves-effect waves-teal detail-button">詳細</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 m4 l3">
+          <div class="card">
+            <div class="card-image" style="height:150px;background:#ddd url('https://upload.wikimedia.org/wikipedia/commons/1/1b/Mentaiko_by_Kanko.jpg') no-repeat center center;background-size:cover;">
+            </div>
+            <div class="card-content">
+              <div class="title">明太子</div>
+              <div class="description">
+                福岡で辛子明太子を製造するふくやによると、明太子の語源は、朝鮮語でスケトウダラを...
+              </div>
+              <div class="button-area">
+                <a class="btn-flat waves-effect waves-teal detail-button">詳細</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 m4 l3">
+          <div class="card">
+            <div class="card-image" style="height:150px;background:#ddd url('https://www.marukome.co.jp/files/recipe/2911/5a684ffa-8280-4016-b1e2-affe1b85f192.jpg?tm=1542591376') no-repeat center center;background-size:cover;">
+            </div>
+            <div class="card-content">
+              <div class="title">味噌汁</div>
+              <div class="description">
+                日本料理における汁物の一つで、だしを味噌で調味した汁に、野菜や豆腐、麸や魚介類な...
+              </div>
+              <div class="button-area">
+                <a class="btn-flat waves-effect waves-teal detail-button">詳細</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 m4 l3">
+          <div class="card">
+            <div class="card-image" style="height:150px;background:#ddd url('https://mi-journey.jp/foodie/wp-content/uploads/2016/02/1199_fish_top.jpg') no-repeat center center;background-size:cover;">
+            </div>
+            <div class="card-content">
+              <div class="title">焼き魚</div>
+              <div class="description">
+                焼魚は、直火焼きと間接焼きとに分類される。直火焼きは、魚を網にのせたり串を打っ...
+              </div>
+              <div class="button-area">
+                <a class="btn-flat waves-effect waves-teal detail-button">詳細</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="list-button">
+        <a class="btn btn-large waves-effect waves-light orange">返礼品一覧へ</a>
+      </div>
+    </article>
+    <!-- /商品紹介 -->
+
+    <!-- ふるさと納税とは？ -->
+    <article class="what-furusato-tax">
+      <h5 class="theme-caption">ふるさと納税とは？</h5>
+
+      <div class="description">
+        ふるさと納税は、全国の都道府県や市区町村に「寄附」を行う制度です。寄附を行った場合、原則として自己負担額の2,000円を除いた全額が控除の対象となります。詳細は下記のページをご覧ください。
+      </div>
+
+      <div class="section row">
+        <div class="col s12 m6 l4">
+          <div class="card what">
+            <div class="card-image">
+            </div>
+            <div class="card-content">
+              ふるさと納税とは？
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="card onestop">
+            <div class="card-image">
+            </div>
+            <div class="card-content">
+              ワンストップ特例制度について
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="card tax-use">
+            <div class="card-image">
+            </div>
+            <div class="card-content">
+              寄附金の使い道
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- /ふるさと納税とは？ -->
+  </div>
+  <!-- /メインコンテンツ -->
+
+
+  <div class="parallax-container" style="height:100px">
+    <div class="parallax"><img src="https://live.staticflickr.com/3910/14946999446_3eff2c01a3_c.jpg"></div>
   </div>
 
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
+  <!-- フッタ -->
+  <footer class="page-footer">
+    <div class="contents">
       <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive
-              system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <br><br>
-
-    <div class="section">
-
-    </div>
-  </div>
-
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+        <div class="col s12 m6 l4">
+          <div class="category">相模原市を知る</div>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a href="#!" class="link">相模原市について</a></li>
+            <li><a href="#!" class="link">寄附金の使い道</a></li>
           </ul>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
+        <div class="col s12 m6 l4">
+          <span class="category">返礼品を探す</span>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a href="#!" class="link">返礼品の種類から選ぶ</a></li>
+            <li><a href="#!" class="link">寄附金額から選ぶ</a></li>
+            <li><a href="#!" class="link">返礼品一覧から選ぶ</a></li>
+          </ul>
+        </div>
+        <div class="col s12 m6 l4">
+          <span class="category">ふるさと納税を学ぶ</span>
+          <ul>
+            <li><a href="#!" class="link">ふるさと納税とは？</a></li>
+            <li><a href="#!" class="link">ワンストップ特例について</a></li>
+            <li><a href="#!" class="link">確定申告について</a></li>
+          </ul>
+        </div>
+        <div class="col s12 m6 l4">
+          <span class="category">当サイトについて</span>
+          <ul>
+            <li><a href="#!" class="link">当サイトについて</a></li>
+            <li><a href="#!" class="link">個人情報の取り扱いについて</a></li>
+            <li><a href="#!" class="link">特定商取引法</a></li>
+          </ul>
+        </div>
+        <div class="col s12 m6 l4">
+          <span class="category">お問い合わせ</span>
+          <ul>
+            <li><a href="#!" class="link">ご利用ガイド</a></li>
+            <li><a href="#!" class="link">よくある質問</a></li>
+            <li><a href="#!" class="link">お問い合わせ</a></li>
           </ul>
         </div>
       </div>
+      <div class="row store-info">
+        <div class="col s12 l6">
+          <div class="store-name">相模原市役所</div>
+          <div class="store-address">
+            〒252-5277<br>
+            神奈川県相模原市中央区中央2-11-15<br>
+            代表電話番号：042-754-1111<br>
+          </div>
+        </div>
+      </div>
     </div>
+
     <div class="footer-copyright">
       <div class="container">
-        Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        このシステムは○○○○○株式会社が提供する×××××©を使用しています。
       </div>
     </div>
   </footer>
+  <!-- /フッタ -->
 
   <!-- Floating Action Button -->
   <div class="fixed-action-btn">
