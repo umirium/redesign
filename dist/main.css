@@ -4126,19 +4126,19 @@ button.btn-floating {
   width: 35px;
   height: 35px;
   background-repeat: no-repeat;
-  background-image: url(../webfonts/twitter.svg); }
+  background-image: url(./webfonts/twitter.svg); }
 
 .line-icon {
   width: 35px;
   height: 35px;
   background-repeat: no-repeat;
-  background-image: url(../webfonts/line.svg); }
+  background-image: url(./webfonts/line.svg); }
 
 .facebook-icon {
   width: 35px;
   height: 35px;
   background-repeat: no-repeat;
-  background-image: url(../webfonts/facebook.svg); }
+  background-image: url(./webfonts/facebook.svg); }
 
 html {
   visibility: hidden; }
