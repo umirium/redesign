@@ -2,9 +2,17 @@
 @import 'sns-icons';
 
 // コンテンツの最大横幅
-$max-width-contents: 1100px;
+$max_width_contents: 1100px;
 // 自治体カラー
-$store-color: #bb35a4;
+$store_color: #bb35a4;
+
+// 見出しストア名のフォントサイズ可変設定
+$breakpoint_for_vw: "screen and (min-width: 601px)";
+// $font_size: 基準となる画面幅のフォントサイズ, $viewport: 基準となる画面幅
+@mixin vw ($font_size: 10, $viewport: 320) {
+  $rate: 100 / $viewport;
+  font-size: $rate * $font_size * 1vw;
+}
 
 // WebフォントのFOUT防止
 html {
@@ -75,7 +83,7 @@ body {
   }
 
   .top-contents {
-    max-width: $max-width-contents;
+    max-width: $max_width_contents;
     margin: 0 auto;
     padding: 0 1.5em;
 
@@ -83,13 +91,25 @@ body {
       padding-top: 3em;
 
       .name {
+        // モバイル版はvwを用いて可変にする
+        @include vw(42);
+        @media #{$breakpoint_for_vw} {
+          font-size: 4.5em;
+        }
+
         text-align: center;
-        color: $store-color;
+        color: $store_color;
       }
 
       .catchphrase {
+        // モバイル版はvwを用いて可変にする
+        @include vw(20);
+        @media #{$breakpoint_for_vw} {
+          font-size: 2em;
+        }
+
         text-align: center;
-        color: $store-color;
+        color: $store_color;
       }
 
       .description {
@@ -206,7 +226,7 @@ body {
       padding-bottom: 2.5em;
 
       .row {
-        max-width: $max-width-contents;
+        max-width: $max_width_contents;
         width: 80%;
         padding-top: 0.5em;
         margin: 0 auto;

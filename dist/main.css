@@ -4189,11 +4189,19 @@ body {
     body .top-contents .store-info {
       padding-top: 3em; }
       body .top-contents .store-info .name {
+        font-size: 13.125vw;
         text-align: center;
         color: #bb35a4; }
+        @media screen and (min-width: 601px) {
+          body .top-contents .store-info .name {
+            font-size: 4.5em; } }
       body .top-contents .store-info .catchphrase {
+        font-size: 6.25vw;
         text-align: center;
         color: #bb35a4; }
+        @media screen and (min-width: 601px) {
+          body .top-contents .store-info .catchphrase {
+            font-size: 2em; } }
       body .top-contents .store-info .description {
         font-size: 1.3em;
         padding-top: 1.5em;
