@@ -19,6 +19,12 @@ module.exports = {
       chunks: 'initial',
     }
   },
+  // config webpack-dev-server
+  devServer: {
+    open: true, // 自動でブラウザを開く
+    host: '0.0.0.0',
+    // port: 80,
+  },
   module: {
     rules: [
       {
