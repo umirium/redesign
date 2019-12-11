@@ -4166,8 +4166,12 @@ body {
         top: 3px;
         left: 33px;
         min-width: 0; }
-    body #navbar .brand-logo img {
-      height: 60px; }
+    body #navbar .brand-logo {
+      height: 100%;
+      padding: 0.2em 0.3em 0.3em; }
+      body #navbar .brand-logo img {
+        position: relative;
+        height: 100%; }
   body #navbar.hide-animation {
     transform: translateY(-100%); }
   body .slider.top-slider .caption {
@@ -4219,7 +4223,8 @@ body {
           padding: 0.8em 0.8em 0; }
         body .top-contents .product-info .card-content .description {
           padding: 0.3em 1.3em 0 1.5em;
-          text-align: justify; }
+          text-align: justify;
+          min-height: 8em; }
         body .top-contents .product-info .card-content .button-area {
           text-align: right;
           padding: 1em 1.5em 0.8em; }
@@ -4233,6 +4238,12 @@ body {
       body .top-contents .what-furusato-tax .description {
         padding: 0.5em 0.5em;
         text-align: justify; }
+      body .top-contents .what-furusato-tax .card-link {
+        color: #546E7A; }
+      body .top-contents .what-furusato-tax .card:hover {
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        transition: 0.3s ease-in-out; }
       body .top-contents .what-furusato-tax .what .card-image {
         height: 100px;
         background: #ddd url("https://static.tenki.jp/images/inapp/mountain-app/photo/photo_172_01.jpg") no-repeat center center;
