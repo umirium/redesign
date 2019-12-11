@@ -11,7 +11,9 @@ loadFonts();
 
 $(() => {
     // Materialize componentsの初期化
-    $('.fixed-action-btn').floatingActionButton()
+    $('.fixed-action-btn').floatingActionButton({
+      hoverEnabled: false,
+    })
     $('.sidenav').sidenav()
     $('.parallax').parallax()
     $('.slider').slider()

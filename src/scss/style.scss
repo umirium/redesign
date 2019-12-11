@@ -5,6 +5,8 @@
 $max_width_contents: 1100px;
 // 自治体カラー
 $store_color: #bb35a4;
+// 標準フォントカラー（視認性のためトーンを落としたカラーに）
+$default_font_color: #546E7A;
 
 // 見出しストア名のフォントサイズ可変設定
 $breakpoint_for_vw: "screen and (min-width: 601px)";
@@ -27,9 +29,8 @@ html.wf-delay {
 body {
   margin: 0 auto;
   font-family: 'Noto Sans', 'Noto Sans CJK JP', 'Noto Sans JP', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
-
   letter-spacing: .05em;
-  color: #546E7A;
+  color: $default_font_color;
 
   #navbar {
     // navbarを固定し、下スクロールで隠す
@@ -54,8 +55,12 @@ body {
 
     // ストアロゴ
     .brand-logo {
+      height: 100%;
+      padding: 0.2em 0.3em 0.3em;
+
       img {
-         height:60px;
+        position: relative;
+        height: 100%;
       }
     }
   }
@@ -143,6 +148,7 @@ body {
         .description {
           padding:  0.3em 1.3em 0 1.5em;
           text-align: justify;
+          min-height: 8em;
         }
 
         .button-area {
@@ -167,6 +173,18 @@ body {
       .description {
         padding: 0.5em 0.5em;
         text-align: justify;
+      }
+
+      // カードのリンクカラーをデフォルトカラーに
+      .card-link {
+        color: $default_font_color;
+      }
+
+      // 各カードのマウスオーバー効果
+      .card:hover {
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        transition: 0.3s ease-in-out;
       }
 
       .what {
