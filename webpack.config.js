@@ -23,6 +23,7 @@ module.exports = {
   // config webpack-dev-server
   devServer: {
     open: true, // 自動でブラウザを開く
+    watchContentBase: true, // 変更監視
     host: '0.0.0.0',
     // port: 80,
   },

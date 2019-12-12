@@ -70,20 +70,60 @@ body {
   }
 
   .slider.top-slider {
-    .caption {
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
+    margin-top: 100px;
 
-      .paragraph {
-        display: grid;
-        height: 100%;
-        width: 100%;
-        padding: 2em;
-        justify-content: end;
-        align-items: end;
+    .slides {
+      background-color: transparent;
+
+      li {
+        max-width: $max_width_contents;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        .caption {
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+
+          .paragraph {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            padding: 2em;
+            justify-content: end;
+            align-items: end;
+          }
+        }
       }
+    }
+
+    // NOTE: backgroundの画像をPHPで選択 or ランダム出力するのであればHTML直打ちにする
+    .slider-left {
+      width: 400px;
+      height: 400px;
+      filter: grayscale(100%);
+      opacity: 0.4;
+      position: absolute;
+      top: 0;
+      margin-left: 1em;
+      background: #ddd url('https://static.tenki.jp/images/inapp/mountain-app/photo/photo_172_01.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    // NOTE: backgroundの画像をPHPで選択 or ランダム出力するのであればHTML直打ちにする
+    .slider-right {
+      width: 400px;
+      height: 400px;
+      filter: grayscale(100%);
+      opacity: 0.4;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 1em;
+      background: #ddd url('https://static.tenki.jp/images/inapp/mountain-app/photo/photo_172_01.jpg') no-repeat center center;
+      background-size: cover;
     }
   }
 
