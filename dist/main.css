@@ -4174,18 +4174,48 @@ body {
         height: 100%; }
   body #navbar.hide-animation {
     transform: translateY(-100%); }
-  body .slider.top-slider .caption {
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%; }
-    body .slider.top-slider .caption .paragraph {
-      display: grid;
-      height: 100%;
-      width: 100%;
-      padding: 2em;
-      justify-content: end;
-      align-items: end; }
+  body .slider.top-slider {
+    margin-top: 100px; }
+    body .slider.top-slider .slides {
+      background-color: transparent; }
+      body .slider.top-slider .slides li {
+        max-width: 1100px;
+        left: 0;
+        right: 0;
+        margin: auto; }
+        body .slider.top-slider .slides li .caption {
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%; }
+          body .slider.top-slider .slides li .caption .paragraph {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            padding: 2em;
+            justify-content: end;
+            align-items: end; }
+    body .slider.top-slider .slider-left {
+      width: 400px;
+      height: 400px;
+      filter: grayscale(100%);
+      opacity: 0.4;
+      position: absolute;
+      top: 0;
+      margin-left: 1em;
+      background: #ddd url("https://static.tenki.jp/images/inapp/mountain-app/photo/photo_172_01.jpg") no-repeat center center;
+      background-size: cover; }
+    body .slider.top-slider .slider-right {
+      width: 400px;
+      height: 400px;
+      filter: grayscale(100%);
+      opacity: 0.4;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 1em;
+      background: #ddd url("https://static.tenki.jp/images/inapp/mountain-app/photo/photo_172_01.jpg") no-repeat center center;
+      background-size: cover; }
   body .top-contents {
     max-width: 1100px;
     margin: 0 auto;
