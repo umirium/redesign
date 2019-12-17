@@ -5,8 +5,8 @@
   <title>Home</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="dist/main.css" rel="stylesheet">
-  <script src="dist/vendor.bundle.js"></script>
-  <script src="dist/bundle.js"></script>
+  <script src="dist/vendor.bundle.js" defer="defer"></script>
+  <script src="dist/bundle.js" defer="defer"></script>
 </head>
 
 <body>
@@ -14,7 +14,7 @@
   <nav id="navbar">
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">
-        <img src="http://www.city.sagamihara.kanagawa.jp/_template_/_site_/_default_/_res/design/images/header/tlogo.png" alt="ロゴ">
+        <img src="http://www.city.sagamihara.kanagawa.jp/_template_/_site_/_default_/_res/design/images/header/tlogo.png" alt="ロゴ" decoding="async">
       </a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger">
         <i class="material-icons">menu</i>
@@ -46,7 +46,7 @@
   <div class="slider top-slider">
     <ul class="slides">
       <li>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/The_Sagami_river_Tx-re.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/The_Sagami_river_Tx-re.jpg" decoding="async">
         <div class="caption right-align top-slider-caption">
           <div class="paragraph">
             <div>
@@ -57,7 +57,7 @@
         </div>
       </li>
       <li>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/South_Entrance_of_JR_Sagamihara_Station_in_2008.jpg/1920px-South_Entrance_of_JR_Sagamihara_Station_in_2008.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/South_Entrance_of_JR_Sagamihara_Station_in_2008.jpg/1920px-South_Entrance_of_JR_Sagamihara_Station_in_2008.jpg" decoding="async">
         <div class="caption right-align top-slider-caption">
           <div class="paragraph">
             <div>
@@ -68,7 +68,7 @@
         </div>
       </li>
       <li>
-        <img src="https://www.miyako-reform.co.jp/wp-content/uploads/2019/06/%E7%9B%B8%E6%A8%A1%E5%8E%9F%E5%B8%82%E7%B7%91%E5%8C%BA.jpg">
+        <img src="https://www.miyako-reform.co.jp/wp-content/uploads/2019/06/%E7%9B%B8%E6%A8%A1%E5%8E%9F%E5%B8%82%E7%B7%91%E5%8C%BA.jpg" decoding="async">
         <div class="caption right-align top-slider-caption">
           <div class="paragraph">
             <div>
@@ -79,7 +79,7 @@
         </div>
       </li>
       <li>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Shiroyama_Dam_04.jpg/2560px-Shiroyama_Dam_04.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Shiroyama_Dam_04.jpg/2560px-Shiroyama_Dam_04.jpg" decoding="async">
         <div class="caption right-align top-slider-caption">
           <div class="paragraph">
             <div>
@@ -90,7 +90,7 @@
         </div>
       </li>
     </ul>
-    
+
     <!-- PC用 左右余白にモノクロ画像表示 -->
     <div class="slider-left"></div>
     <div class="slider-right"></div>
@@ -116,10 +116,14 @@
     <article class="product-info">
       <h5 class="theme-caption">返礼品のご紹介</h5>
 
-      <div class="section row">
+      <!-- おすすめ商品 -->
+      <div class="section row recommended">
         <div class="col s6 m4 l3">
           <div class="card">
-            <div class="card-image" style="height:150px;background:#ddd url('https://shop.r10s.jp/keyuca/cabinet/18/s1101057.jpg') no-repeat center center;background-size:cover;">
+            <div class="card-image" style="background:#ddd url('https://shop.r10s.jp/keyuca/cabinet/18/s1101057.jpg') no-repeat center center;background-size:cover;">
+              <div class="tasuki-orange">
+                人気No.1
+              </div>
             </div>
             <div class="card-content">
               <div class="title">きれいな茶碗</div>
@@ -135,7 +139,10 @@
 
         <div class="col s6 m4 l3">
           <div class="card">
-            <div class="card-image" style="height:150px;background:#ddd url('https://jp.images-monotaro.com/Monotaro3/pi/full/mono09388653-080125-02.jpg') no-repeat center center;background-size:cover;">
+            <div class="card-image" style="background:#ddd url('https://jp.images-monotaro.com/Monotaro3/pi/full/mono09388653-080125-02.jpg') no-repeat center center;background-size:cover;">
+              <div class="tasuki-orange">
+                人気No.2
+              </div>
             </div>
             <div class="card-content">
               <div class="title">やかん</div>
@@ -151,7 +158,10 @@
 
         <div class="col s6 m4 l3">
           <div class="card">
-            <div class="card-image" style="height:150px;background:#ddd url('https://www.sirogohan.com/_files/recipe/images/gohan/gohan11543.JPG') no-repeat center center;background-size:cover;">
+            <div class="card-image" style="background:#ddd url('https://www.sirogohan.com/_files/recipe/images/gohan/gohan11543.JPG') no-repeat center center;background-size:cover;">
+              <div class="tasuki-orange">
+                人気No.3
+              </div>
             </div>
             <div class="card-content">
               <div class="title">ご飯</div>
@@ -167,7 +177,7 @@
 
         <div class="col s6 m4 l3">
           <div class="card">
-            <div class="card-image" style="height:150px;background:#ddd url('https://upload.wikimedia.org/wikipedia/commons/1/1b/Mentaiko_by_Kanko.jpg') no-repeat center center;background-size:cover;">
+            <div class="card-image" style="background:#ddd url('https://upload.wikimedia.org/wikipedia/commons/1/1b/Mentaiko_by_Kanko.jpg') no-repeat center center;background-size:cover;">
             </div>
             <div class="card-content">
               <div class="title">明太子</div>
@@ -183,7 +193,7 @@
 
         <div class="col s6 m4 l3">
           <div class="card">
-            <div class="card-image" style="height:150px;background:#ddd url('https://www.marukome.co.jp/files/recipe/2911/5a684ffa-8280-4016-b1e2-affe1b85f192.jpg?tm=1542591376') no-repeat center center;background-size:cover;">
+            <div class="card-image" style="background:#ddd url('https://www.marukome.co.jp/files/recipe/2911/5a684ffa-8280-4016-b1e2-affe1b85f192.jpg?tm=1542591376') no-repeat center center;background-size:cover;">
             </div>
             <div class="card-content">
               <div class="title">味噌汁</div>
@@ -199,7 +209,10 @@
 
         <div class="col s6 m4 l3">
           <div class="card">
-            <div class="card-image" style="height:150px;background:#ddd url('https://mi-journey.jp/foodie/wp-content/uploads/2016/02/1199_fish_top.jpg') no-repeat center center;background-size:cover;">
+            <div class="card-image" style="background:#ddd url('https://mi-journey.jp/foodie/wp-content/uploads/2016/02/1199_fish_top.jpg') no-repeat center center;background-size:cover;">
+              <div class="tasuki-red">
+                SOLD OUT
+              </div>
             </div>
             <div class="card-content">
               <div class="title">焼き魚</div>
@@ -213,6 +226,120 @@
           </div>
         </div>
       </div>
+      <!-- /おすすめ商品 -->
+
+      <h5 class="theme-caption2"><span>商品カテゴリ</span></h5>
+
+      <!-- 商品カテゴリ -->
+      <div class="section row category">
+        <div class="col s6 m4 l3">
+          <a href="#" class="card-link">
+            <div class="card">
+              <div class="card-image" style="background:#ddd url('https://tk.ismcdn.jp/mwimgs/4/a/1140/img_4a328fefb7b69cbbd11c7ebbe8ed065a533366.jpg') no-repeat center center;background-size:cover;">
+              </div>
+              <div class="card-content">
+                <div class="title">肉類</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col s6 m4 l3">
+          <a href="#" class="card-link">
+            <div class="card">
+              <div class="card-image" style="background:#ddd url('http://www.kane10.co.jp/images/material/original2_img001.jpg') no-repeat center center;background-size:cover;">
+              </div>
+              <div class="card-content">
+                <div class="title">魚介類</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col s6 m4 l3">
+          <a href="#" class="card-link">
+            <div class="card">
+              <div class="card-image" style="background:#ddd url('https://tk.ismcdn.jp/mwimgs/8/a/1140/img_8a95e0754b6e6ba31bf363a1b983554c542663.jpg') no-repeat center center;background-size:cover;">
+              </div>
+              <div class="card-content">
+                <div class="title">お菓子</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col s6 m4 l3">
+          <a href="#" class="card-link">
+            <div class="card">
+              <div class="card-image" style="background:#ddd url('https://i1.wp.com/u-ful.com/wp-content/uploads/2017/04/7999.jpg?w=730&ssl=1') no-repeat center center;background-size:cover;">
+              </div>
+              <div class="card-content">
+                <div class="title">日用品</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- /商品カテゴリ -->
+
+      <h5 class="theme-caption2"><span>料金クラス</span></h5>
+
+      <!-- 金額毎 -->
+      <div class="section row prices">
+        <div class="col s6 m4 l3">
+          <a href="#" class="card-link">
+            <div class="card">
+              <div class="card-content">
+                <div class="title">〜 １０，０００円</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col s6 m4 l3">
+          <a href="#" class="card-link">
+            <div class="card">
+              <div class="card-content">
+                <div class="title">〜 ２０，０００円</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col s6 m4 l3">
+          <a href="#" class="card-link">
+            <div class="card">
+              <div class="card-content">
+                <div class="title">〜 ３０，０００円</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col s6 m4 l3">
+          <a href="#" class="card-link">
+            <div class="card">
+              <div class="card-content">
+                <div class="title">〜 ５０，０００円</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col s6 m4 l3">
+          <a href="#" class="card-link">
+            <div class="card">
+              <div class="card-content">
+                <div class="title">〜 １００，０００円</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col s6 m4 l3">
+          <a href="#" class="card-link">
+            <div class="card">
+              <div class="card-content">
+                <div class="title">〜 ２００，０００円</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- /金額毎 -->
+
 
       <div class="list-button">
         <a class="btn btn-large waves-effect waves-light orange">返礼品一覧へ</a>
@@ -272,7 +399,7 @@
 
 
   <div class="parallax-container" style="height:100px">
-    <div class="parallax"><img src="https://live.staticflickr.com/3910/14946999446_3eff2c01a3_c.jpg"></div>
+    <div class="parallax"><img src="https://live.staticflickr.com/3910/14946999446_3eff2c01a3_c.jpg" decoding="async"></div>
   </div>
 
   <!-- フッタ -->
