@@ -69,6 +69,7 @@ module.exports = {
           options: {
             limit: 100 * 1024,
             name: '[name].[ext]',
+            url: true,
           }
         }]
       },
