@@ -16,10 +16,12 @@
       <a href="#" class="brand-logo">
         <img src="http://www.city.sagamihara.kanagawa.jp/_template_/_site_/_default_/_res/design/images/header/tlogo.png" alt="ロゴ" decoding="async">
       </a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+      <a href="#" data-target="mobile-menu" class="sidenav-trigger">
         <i class="material-icons">menu</i>
       </a>
-      <ul class="right">
+
+      <!-- PC用メニュー -->
+      <ul id="pc-menu" class="right">
         <li class="hide-on-med-and-down"><a href="sass.html">商品一覧</a></li>
         <li class="hide-on-med-and-down"><a href="badges.html">○○とは？</a></li>
         <li id="nav-cart">
@@ -31,15 +33,83 @@
         </li>
         <!-- <li style="background-color:crimson;"><a href="mobile.html">ログイン</a></li> -->
       </ul>
+      <!-- /PC用メニュー -->
+
+      <!-- モバイル用メニュー -->
+      <ul id="mobile-menu" class="sidenav">
+        <li class="logo">
+          <div class="user-view">
+            <img src="public/sagamihara.jpg">
+            <div class="name">
+              相模原市<br>
+              ふるさと納税サイト
+            </div>
+          </div>
+        </li>
+        <li class="search">
+          <div class="search-wrapper input-field">
+            <input id="mobile-search" class="autocomplete" placeholder="返礼品を検索" autocomplete="off">
+            <i class="material-icons">search</i>
+          </div>
+        </li>
+
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold">
+              <a class="collapsible-header waves-effect waves-teal" tabindex="0">相模原市を知る</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="color.html">相模原市について</a></li>
+                  <li><a href="grid.html">寄附金の使い道</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold">
+              <a class="collapsible-header waves-effect waves-teal" tabindex="0">返礼品を探す</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="badges.html">返礼品の種類から選ぶ</a></li>
+                  <li><a href="buttons.html">寄附金額から選ぶ</a></li>
+                  <li><a href="breadcrumbs.html">返礼品一覧から選ぶ</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold">
+              <a class="collapsible-header waves-effect waves-teal" tabindex="0">ふるさと納税を学ぶ</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="auto-init.html">ふるさと納税とは？</a></li>
+                  <li><a href="carousel.html">ワンストップ特例について</a></li>
+                  <li><a href="collapsible.html">確定申告について</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold">
+              <a class="collapsible-header waves-effect waves-teal" tabindex="0">当サイトについて</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="autocomplete.html">当サイトについて</a></li>
+                  <li><a href="checkboxes.html">個人情報の取り扱いについて</a></li>
+                  <li><a href="chips.html">特定商取引法</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold">
+              <a class="collapsible-header waves-effect waves-teal" tabindex="0">お問い合わせ</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="autocomplete.html">ご利用ガイド</a></li>
+                  <li><a href="checkboxes.html">よくある質問</a></li>
+                  <li><a href="chips.html">お問い合わせ</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- モバイル用メニュー -->
     </div>
   </nav>
-
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">商品一覧</a></li>
-    <li><a href="badges.html">○○とは？</a></li>
-    <li><a href="collapsible.html">Javascript</a></li>
-    <li><a href="mobile.html">Mobile</a></li>
-  </ul>
   <!-- /ヘッダ（Navbar） -->
 
   <!-- スライド画像 -->
@@ -471,10 +541,9 @@
   <!-- Floating Action Button -->
   <div class="fixed-action-btn">
     <a class="btn-floating btn-large red">
-      <i class="large material-icons">menu</i>
+      <i class="large material-icons">share</i>
     </a>
     <ul>
-      <li><a class="btn-floating brown"><i class="material-icons">publish</i></a></li>
       <li><a class="btn-floating light-blue"><i class="twitter-icon"> </i></a></li>
       <li><a class="btn-floating blue darken-2"><i class="facebook-icon"> </i></a></li>
       <li><a class="btn-floating green"><i class="line-icon"> </i></a></li>
